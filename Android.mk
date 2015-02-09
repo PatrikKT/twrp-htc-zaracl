@@ -14,7 +14,7 @@
 # limitations under the License.
 
 ifeq ($(RECOVERY_VARIANT), twrp)
-ifeq ($(TARGET_DEVICE), zara)
+ifeq ($(TARGET_DEVICE), zaracl)
 
 LOCAL_PATH := $(call my-dir)
 include $(call first-makefiles-under, $(LOCAL_PATH))

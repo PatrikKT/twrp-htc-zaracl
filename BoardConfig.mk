@@ -1,10 +1,10 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/htc/zara/BoardConfigVendor.mk
+-include vendor/htc/zaracl/BoardConfigVendor.mk
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := zara
+TARGET_BOOTLOADER_BOARD_NAME := zaracl
 TARGET_NO_BOOTLOADER := true
 
 # Platform
@@ -24,7 +24,7 @@ BOARD_KERNEL_BASE := 0x80600000
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
-TARGET_PREBUILT_KERNEL := device/htc/zara/kernel
+TARGET_PREBUILT_KERNEL := device/htc/zaracl/kernel
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -42,7 +42,7 @@ USE_OPENGL_RENDERER := true
 TARGET_DISPLAY_USE_RETIRE_FENCE := true
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
-BOARD_EGL_CFG := device/htc/zara/configs/egl.cfg
+BOARD_EGL_CFG := device/htc/zaracl/configs/egl.cfg
 
 # Power
 TARGET_POWERHAL_VARIANT := cm
@@ -66,7 +66,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/htc_lpm/lpm_mode
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/htc/zara/sepolicy
+BOARD_SEPOLICY_DIRS += device/htc/zaracl/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     app.te \
